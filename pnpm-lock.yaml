@@ -28,6 +28,9 @@ devDependencies:
   '@sveltejs/vite-plugin-svelte':
     specifier: ^3.0.0
     version: 3.1.1(svelte@4.2.18)(vite@5.3.1)
+  '@sveltejs/vite-plugin-svelte-inspector':
+    specifier: ^2.1.0
+    version: 2.1.0(@sveltejs/vite-plugin-svelte@3.1.1)(svelte@4.2.18)(vite@5.3.1)
   '@tailwindcss/typography':
     specifier: ^0.5.13
     version: 0.5.13(tailwindcss@3.4.4)
