@@ -1,3 +1,4 @@
+<!--suppress ReservedWordAsName -->
 <script lang="ts">
 	let className = '';
 	export { className as class };
