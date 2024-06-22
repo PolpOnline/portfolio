@@ -1,0 +1,47 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="10000"
+        height="10000"
+        viewBox="0 0 10000 10000"
+        fill="none"
+>
+    <g id="PolpOnline logo">
+        <circle cx="5000" cy="5000" r="5000" fill="#DCD2D3"/>
+        <rect
+                id="mouth"
+                x="3469.38"
+                y="6409.29"
+                width="3031.25"
+                height="340.708"
+                fill="#372B2B"
+                stroke="#372B2B"
+                stroke-width="30"
+                stroke-dasharray="6743.916015625"
+                stroke-linecap="round"
+        />
+        <g id="eyes">
+            <circle
+                    id="left"
+                    cx="2640"
+                    cy="3905"
+                    r="645"
+                    fill="#372B2B"
+                    stroke="#372B2B"
+                    stroke-width="30"
+                    stroke-dasharray="4052.24365234375"
+                    stroke-linecap="round"
+            />
+            <circle
+                    id="right"
+                    cx="7361"
+                    cy="3910"
+                    r="645"
+                    fill="#372B2B"
+                    stroke="#372B2B"
+                    stroke-width="30"
+                    stroke-dasharray="4052.24365234375"
+                    stroke-linecap="round"
+            />
+        </g>
+    </g>
+</svg>
