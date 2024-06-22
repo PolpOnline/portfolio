@@ -95,4 +95,18 @@
 	#mouth {
 		animation: draw-mouth var(--animation-duration) forwards;
 	}
+
+	@keyframes add-drop-shadow {
+		0% {
+			filter: drop-shadow(0 0 1rem rgba(220, 210, 211, 0));
+		}
+		100% {
+			filter: drop-shadow(0 0 1rem rgba(220, 210, 211, 0.5));
+		}
+	}
+
+	svg {
+		animation: add-drop-shadow var(--animation-duration) forwards;
+		animation-delay: var(--animation-duration);
+	}
 </style>
