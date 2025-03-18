@@ -7,7 +7,7 @@ const config: Config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		fontFamily: {
-			jetbrainsMono: ['Jetbrains Mono Variable']
+			cascadiaCode: ['Cascadia Code Regular']
 		},
 		container: {
 			center: true,
@@ -69,8 +69,8 @@ const config: Config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				sans: ['Jetbrains Mono Variable', 'monospace', ...fontFamily.sans],
-				mono: ['Jetbrains Mono Variable', ...fontFamily.mono]
+				sans: ['Cascadia Code Regular', 'monospace', ...fontFamily.sans],
+				mono: ['Cascadia Code Regular', ...fontFamily.mono]
 			},
 			keyframes: {
 				'accordion-down': {
