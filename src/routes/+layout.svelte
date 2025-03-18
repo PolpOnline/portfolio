@@ -1,8 +1,9 @@
 <script lang="ts">
-	import '../app.pcss';
+	import '../app.css';
 	import 'unfonts.css';
 
 	import favicon from '$lib/img/favicon.svg';
+
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
