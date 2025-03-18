@@ -12,6 +12,7 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@iconify-json/logos": "^1.2.4",
 		"@iconify-json/skill-icons": "^1.2.0",
 		"@sveltejs/adapter-cloudflare": "^5.1.0",
 		"@sveltejs/kit": "^2.20.1",
