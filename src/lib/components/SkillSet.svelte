@@ -35,7 +35,7 @@
 	<div>
 		<h3 class="my-8 font-medium">Frontend</h3>
 
-		<div class="flex w-full flex-wrap justify-center gap-4 px-14 text-center text-6xl">
+		<div class="flex w-full flex-wrap justify-center gap-4 px-14 text-6xl">
 			<SkillIconsBootstrap />
 			<SkillIconsCss />
 			<SkillIconsHtml />
