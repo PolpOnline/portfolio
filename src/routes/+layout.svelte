@@ -3,6 +3,11 @@
 	import 'unfonts.css';
 
 	import favicon from '$lib/img/favicon.svg';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <svelte:head>
@@ -10,5 +15,5 @@
 </svelte:head>
 
 <main>
-	<slot></slot>
+	{@render children?.()}
 </main>
