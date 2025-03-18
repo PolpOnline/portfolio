@@ -1,20 +1,3 @@
-<script lang="ts">
-	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
-
-	onMount(() => {
-		const wheel = document.getElementById('wheel');
-
-		gsap.to(wheel, {
-			duration: 1.5,
-			y: 30,
-			repeat: -1,
-			yoyo: true,
-			ease: 'power1.inOut'
-		});
-	});
-</script>
-
 <svg
 	width="32px"
 	height="100%"
@@ -33,3 +16,19 @@
 		stroke="#fff"
 	/>
 </svg>
+
+<style>
+	#wheel {
+		animation: wheelMove 3s ease-in-out infinite;
+	}
+
+	@keyframes wheelMove {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(30px);
+		}
+	}
+</style>
