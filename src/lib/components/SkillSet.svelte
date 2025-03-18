@@ -29,12 +29,11 @@
 	import SkillIconsTypescript from '~icons/skill-icons/typescript';
 	import SkillIconsViteDark from '~icons/skill-icons/vite-dark';
 	import SkillIconsVuejsDark from '~icons/skill-icons/vuejs-dark';
-	import SkillIconsVuetifyDark from '~icons/skill-icons/vuetify-dark';
 </script>
 
-<div class="my-3 grid grid-cols-3 grid-rows-2 gap-5 text-center text-2xl">
+<div class="my-3 grid grid-cols-3 gap-5 text-center text-2xl">
 	<div>
-		<h3 class="my-3 font-medium">Frontend</h3>
+		<h3 class="my-8 font-medium">Frontend</h3>
 
 		<div
 			class="flex w-full flex-wrap justify-center space-y-4 space-x-4 px-14 text-center text-6xl"
@@ -48,12 +47,11 @@
 			<SkillIconsTailwindcssDark />
 			<SkillIconsTypescript />
 			<SkillIconsVuejsDark />
-			<SkillIconsVuetifyDark />
 			<SkillIconsViteDark />
 		</div>
 	</div>
 	<div>
-		<h3 class="my-3 font-medium">Backend/Systems</h3>
+		<h3 class="my-8 font-medium">Backend/Systems</h3>
 
 		<div class="flex w-full flex-wrap justify-center space-y-4 space-x-4 px-14 text-6xl">
 			<SkillIconsArduino />
@@ -69,7 +67,7 @@
 		</div>
 	</div>
 	<div>
-		<h3 class="my-3 font-medium">Tools</h3>
+		<h3 class="my-8 font-medium">Tools</h3>
 
 		<div class="flex w-full flex-wrap justify-center space-y-4 space-x-4 px-14 text-6xl">
 			<SkillIconsArchDark />
