@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { PolpOnlineLogo } from '$lib/img';
+	import SkillSet from '$lib/components/SkillSet.svelte';
 </script>
 
 <div class="flex h-svh flex-col items-center justify-center">
@@ -8,5 +9,4 @@
 	<h1 class="mt-4 text-[3rem]">PolpOnline</h1>
 </div>
 
-<style lang="postcss">
-</style>
+<SkillSet />
