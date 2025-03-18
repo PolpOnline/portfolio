@@ -17,7 +17,7 @@
 		</a>
 	</div>
 	<div style="--backdrop-color: #5865F2" class="icon-shadow">
-		<a href="https://discordapp.com/users/524254508151209995" target="_blank" class="icon-shadow">
+		<a href="https://discordapp.com/users/524254508151209995" target="_blank">
 			<SkillIconsDiscord />
 		</a>
 	</div>
