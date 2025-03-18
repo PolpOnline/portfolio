@@ -52,6 +52,7 @@
 	},
 	"packageManager": "pnpm@10.6.3",
 	"dependencies": {
+		"gsap": "^3.12.7",
 		"lenis": "^1.2.3"
 	}
 }
