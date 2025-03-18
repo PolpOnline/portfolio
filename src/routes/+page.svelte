@@ -9,4 +9,8 @@
 	<h1 class="mt-4 text-[3rem]">PolpOnline</h1>
 </div>
 
+<h2 class="mb-5 text-center text-4xl font-bold">My skills</h2>
+
 <SkillSet />
+
+<h2 class="mb-5 text-center text-4xl font-bold">My projects</h2>

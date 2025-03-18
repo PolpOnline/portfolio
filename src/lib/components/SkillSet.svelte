@@ -32,9 +32,7 @@
 	import SkillIconsVuetifyDark from '~icons/skill-icons/vuetify-dark';
 </script>
 
-<h2 class="text-muted-foreground mb-5 text-center text-4xl font-bold">My skills</h2>
-
-<div class="mb-20 grid grid-cols-3 grid-rows-2 gap-5 text-center text-2xl">
+<div class="my-3 grid grid-cols-3 grid-rows-2 gap-5 text-center text-2xl">
 	<div>
 		<h3 class="my-3 font-medium">Frontend</h3>
 
