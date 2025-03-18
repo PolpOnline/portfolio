@@ -12,6 +12,7 @@
 
 <svelte:head>
 	<link rel="icon" type="image/svg+xml" href={favicon} />
+	<title>PolpOnline</title>
 </svelte:head>
 
 <main>
