@@ -3,6 +3,7 @@
 	import SkillSet from '$lib/components/SkillSet.svelte';
 	import Scroller from '$lib/components/Scroller.svelte';
 	import SocialButtons from '$lib/components/SocialButtons.svelte';
+	import Projects from '$lib/components/Projects.svelte';
 </script>
 
 <div class="flex h-svh flex-col items-center justify-center">
@@ -23,4 +24,8 @@
 
 <SkillSet />
 
-<h2 class="mt-20 mb-5 text-center text-4xl font-bold">My projects</h2>
+<h2 class="mt-20 mb-10 text-center text-4xl font-bold">My projects</h2>
+
+<Projects />
+
+<div class="mb-10"></div>
