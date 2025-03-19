@@ -76,3 +76,16 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+/* Modernize scrollbar */
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-border rounded-full;
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-background;
+}
