@@ -58,7 +58,7 @@
 			{#if demoLink}
 				<Button href={demoLink} target="_blank" variant="secondary">
 					<MdiLinkVariant class="h-6 w-6" />
-					View demo
+					View live site
 				</Button>
 			{/if}
 		</div>
