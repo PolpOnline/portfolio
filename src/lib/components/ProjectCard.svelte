@@ -35,9 +35,9 @@
 			/>
 		</Lens>
 
-		<h1 class="mt-4 mb-4 text-center text-[3rem] font-semibold tracking-wider">{title}</h1>
-		<p class="mb-4 text-center text-lg">{description}</p>
-		<div class="mb-4 flex flex-wrap justify-center gap-2">
+		<h1 class="my-6 text-center text-[3rem] font-semibold tracking-wider">{title}</h1>
+		<p class="mb-6 text-center text-lg">{description}</p>
+		<div class="mb-6 flex flex-wrap justify-center gap-2">
 			{#each technologies as technology}
 				<Badge
 					class="custom-tech-badge text-lg"
@@ -49,7 +49,7 @@
 			{/each}
 		</div>
 
-		<div class="mb-4 flex gap-4">
+		<div class="mb-6 flex gap-4">
 			<Button href={githubLink} target="_blank" variant="secondary">
 				<MdiGithub class="h-6 w-6" />
 				View on GitHub

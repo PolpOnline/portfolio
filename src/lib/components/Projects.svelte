@@ -45,7 +45,7 @@
 			<Carousel.Item>
 				<ProjectCard
 					title="GPU Usage Waybar"
-					description="A simple tool to display GPU usage on waybar (wayland status bar)"
+					description="A simple tool to display GPU usage on Waybar (Wayland status bar)"
 					technologies={['Rust']}
 					githubLink="https://github.com/PolpOnline/gpu-usage-waybar"
 					thumbnail={GPUUsageWaybarImg}
