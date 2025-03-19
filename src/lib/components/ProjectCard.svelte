@@ -3,6 +3,7 @@
 	import MdiLinkVariant from '~icons/mdi/link-variant';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
+	import Lens from '$lib/components/aceternity/Lens.svelte';
 
 	const {
 		title,
@@ -19,15 +20,19 @@
 		demoLink?: string;
 		thumbnail: any;
 	} = $props();
+
+	let hovering = $state(false);
 </script>
 
 <div class="w-full">
 	<div class="flex w-full flex-col items-center justify-center">
-		<enhanced:img
-			src={thumbnail}
-			alt={`${title} thumbnail`}
-			class="mx-auto mb-4 h-full w-[95%] max-w-[800px] rounded-2xl"
-		/>
+		<Lens bind:hovering lensSize={400} zoomFactor={2}>
+			<enhanced:img
+				src={thumbnail}
+				alt={`${title} thumbnail`}
+				class="mx-auto mb-4 h-full w-[95%] max-w-[800px] rounded-2xl"
+			/>
+		</Lens>
 
 		<h1 class="mt-4 mb-4 text-[3rem] font-semibold tracking-wider">{title}</h1>
 		<p class="mb-4 text-center text-lg">{description}</p>
