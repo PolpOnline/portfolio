@@ -20,6 +20,7 @@
 					technologies={['SvelteKit', 'Rust', 'Axum', 'SQLx', 'PostgreSQL']}
 					githubLink="https://github.com/PolpOnline/forum-meucci"
 					thumbnail={ForumImg}
+					backdropColor="#09090B"
 				/>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -30,6 +31,7 @@
 					githubLink="https://github.com/PolpOnline/monitor"
 					demoLink="https://monitor.polp.online"
 					thumbnail={MonitorImg}
+					backdropColor="#09090B"
 				/>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -40,6 +42,7 @@
 					githubLink="https://github.com/PolpOnline/loco-link-shortener"
 					demoLink="https://short.polp.online"
 					thumbnail={ShortenerImg}
+					backdropColor="#000000"
 				/>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -49,6 +52,7 @@
 					technologies={['Rust']}
 					githubLink="https://github.com/PolpOnline/gpu-usage-waybar"
 					thumbnail={GPUUsageWaybarImg}
+					backdropColor="#1C1E2D"
 				/>
 			</Carousel.Item>
 		</Carousel.Content>

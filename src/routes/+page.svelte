@@ -24,7 +24,7 @@
 
 <SkillSet />
 
-<h2 class="mt-20 mb-10 text-center text-4xl font-bold">My projects</h2>
+<h2 class="mt-20 mb-4 text-center text-4xl font-bold">My projects</h2>
 
 <Projects />
 

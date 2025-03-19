@@ -12,7 +12,8 @@
 		technologies,
 		githubLink,
 		demoLink,
-		thumbnail
+		thumbnail,
+		backdropColor
 	}: {
 		title: string;
 		description: string;
@@ -20,6 +21,7 @@
 		githubLink: string;
 		demoLink?: string;
 		thumbnail: any;
+		backdropColor: string;
 	} = $props();
 
 	let hovering = $state(false);
@@ -31,11 +33,12 @@
 			<enhanced:img
 				src={thumbnail}
 				alt={`${title} thumbnail`}
-				class="mx-auto mb-4 h-full w-[95%] max-w-[800px] rounded-2xl"
+				class="project-img mx-auto h-full w-[80%] max-w-[1000px] rounded-2xl py-10"
+				style="--backdrop-color: {backdropColor}"
 			/>
 		</Lens>
 
-		<h1 class="my-6 text-center text-[3rem] font-semibold tracking-wider">{title}</h1>
+		<h1 class="mb-6 text-center text-[3rem] font-semibold tracking-wider">{title}</h1>
 		<p class="mb-6 text-center text-lg">{description}</p>
 		<div class="mb-6 flex flex-wrap justify-center gap-2">
 			{#each technologies as technology}
@@ -69,5 +72,9 @@
 	:global(.custom-tech-badge) {
 		border-color: var(--color);
 		color: var(--color);
+	}
+
+	.project-img {
+		filter: drop-shadow(0 0 1.5rem var(--backdrop-color));
 	}
 </style>
