@@ -1,5 +1,5 @@
 <svg
-	width="32px"
+	width="2rem"
 	height="100%"
 	viewBox="0 0 247 390"
 	xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
 
 <style>
 	#wheel {
-		animation: wheelMove 3s ease-in-out infinite;
+		animation: wheelMove 1.5s ease-in-out infinite;
 	}
 
 	@keyframes wheelMove {
@@ -34,7 +34,7 @@
 			transform: translateY(0);
 		}
 		50% {
-			transform: translateY(30px);
+			transform: translateY(2rem);
 		}
 	}
 </style>
