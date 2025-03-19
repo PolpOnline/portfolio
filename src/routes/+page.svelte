@@ -20,11 +20,11 @@
 	</div>
 </div>
 
-<h2 class="my-5 text-center text-4xl font-bold">My skills</h2>
+<h2 class="my-5 text-center text-4xl font-bold">My Skills</h2>
 
 <SkillSet />
 
-<h2 class="mt-20 mb-4 text-center text-4xl font-bold">My projects</h2>
+<h2 class="mt-20 mb-4 text-center text-4xl font-bold">My Projects</h2>
 
 <Projects />
 
