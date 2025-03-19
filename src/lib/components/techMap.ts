@@ -20,10 +20,10 @@ export const techMap: Record<string, TechInfo> = {
 	}
 };
 
-export function getTechColor(tech: string): string {
+export function getTechColor(tech: string): string | null {
 	const techInfo = techMap[tech];
 	if (techInfo && techInfo.color) {
 		return techInfo.color;
 	}
-	return 'initial'; // Default color if not found
+	return null; // Default color if not found
 }

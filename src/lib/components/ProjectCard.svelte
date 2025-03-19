@@ -40,12 +40,13 @@
 
 		<h1 class="mb-6 text-center text-[3rem] font-semibold tracking-wider">{title}</h1>
 		<p class="mb-6 text-center text-lg">{description}</p>
-		<div class="mb-6 flex flex-wrap justify-center gap-2">
+		<div class="mb-6 flex flex-wrap justify-center gap-4">
 			{#each technologies as technology}
+				{@const color = getTechColor(technology)}
 				<Badge
-					class="custom-tech-badge text-lg"
+					class="custom-tech-badge bg-background text-lg"
 					variant="outline"
-					style="--color: {getTechColor(technology)}"
+					style="--color: {color || 'initial'}; --backdrop-color: {color || '#FFFFFF'}"
 				>
 					{technology}
 				</Badge>
@@ -68,10 +69,15 @@
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	:global(.custom-tech-badge) {
 		border-color: var(--color);
 		color: var(--color);
+		transition: filter 0.2s ease-in-out;
+	}
+
+	:global(.custom-tech-badge:hover) {
+		filter: drop-shadow(0 0 0.5rem var(--backdrop-color));
 	}
 
 	.project-img {
