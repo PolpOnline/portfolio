@@ -19,11 +19,11 @@
 
 	let mousePosition = $state({ x: 100, y: 100 });
 
-	const handleMouseMove = (e: {
-		currentTarget: { getBoundingClientRect: () => any };
-		clientX: number;
-		clientY: number;
-	}) => {
+	type MouseMoveEvent = MouseEvent & {
+		currentTarget: EventTarget & HTMLDivElement;
+	};
+
+	const handleMouseMove = (e: MouseMoveEvent) => {
 		const rect = e.currentTarget.getBoundingClientRect();
 		const x = e.clientX - rect.left;
 		const y = e.clientY - rect.top;
