@@ -1,6 +1,7 @@
 <script lang="ts">
 	// noinspection ES6UnusedImports
 	import * as Carousel from '$lib/components/ui/carousel';
+	import Autoplay from 'embla-carousel-autoplay';
 
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import ForumImg from '$lib/img/screenshots/forum_meucci.png?enhanced';
@@ -10,7 +11,16 @@
 </script>
 
 <div class="mx-auto my-3 md:w-[80%] xl:w-[90%]">
-	<Carousel.Root>
+	<Carousel.Root
+		plugins={[
+			Autoplay({
+				delay: 5000,
+				stopOnMouseEnter: true,
+				// Need stopOnInteraction to be false for the autoplay to resume when the mouse leaves
+				stopOnInteraction: false
+			})
+		]}
+	>
 		<Carousel.Content>
 			<Carousel.Item>
 				<ProjectCard
