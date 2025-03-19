@@ -4,6 +4,7 @@
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
 	import Lens from '$lib/components/aceternity/Lens.svelte';
+	import { getTechColor } from '$lib/components/techMap';
 
 	const {
 		title,
@@ -38,7 +39,11 @@
 		<p class="mb-4 text-center text-lg">{description}</p>
 		<div class="mb-4 flex flex-wrap justify-center gap-2">
 			{#each technologies as technology}
-				<Badge class="text-lg" variant="outline">
+				<Badge
+					class="custom-tech-badge text-lg"
+					variant="outline"
+					style="--color: {getTechColor(technology)}"
+				>
 					{technology}
 				</Badge>
 			{/each}
@@ -59,3 +64,10 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	:global(.custom-tech-badge) {
+		border-color: var(--color);
+		color: var(--color);
+	}
+</style>
