@@ -7,7 +7,7 @@
 	import MonitorImg from '$lib/img/screenshots/monitor.png?enhanced';
 </script>
 
-<div class="mx-auto my-3 w-full max-w-11/12">
+<div class="mx-auto my-3 md:w-[80%] xl:w-[90%]">
 	<Carousel.Root>
 		<Carousel.Content>
 			<Carousel.Item>
@@ -30,7 +30,7 @@
 				/>
 			</Carousel.Item>
 		</Carousel.Content>
-		<Carousel.Previous variant="outline" />
-		<Carousel.Next variant="outline" />
+		<Carousel.Previous variant="outline" class="not-md:hidden" />
+		<Carousel.Next variant="outline" class="not-md:hidden" />
 	</Carousel.Root>
 </div>
