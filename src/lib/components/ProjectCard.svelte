@@ -34,7 +34,7 @@
 			/>
 		</Lens>
 
-		<h1 class="mt-4 mb-4 text-[3rem] font-semibold tracking-wider">{title}</h1>
+		<h1 class="mt-4 mb-4 text-center text-[3rem] font-semibold tracking-wider">{title}</h1>
 		<p class="mb-4 text-center text-lg">{description}</p>
 		<div class="mb-4 flex flex-wrap justify-center gap-2">
 			{#each technologies as technology}
