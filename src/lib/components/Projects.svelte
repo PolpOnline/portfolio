@@ -6,6 +6,7 @@
 	import ForumImg from '$lib/img/screenshots/forum_meucci.png?enhanced';
 	import MonitorImg from '$lib/img/screenshots/monitor.png?enhanced';
 	import ShortenerImg from '$lib/img/screenshots/loco_link_shortener.png?enhanced';
+	import GPUUsageWaybarImg from '$lib/img/screenshots/gpu_usage_waybar.png?enhanced';
 </script>
 
 <div class="mx-auto my-3 md:w-[80%] xl:w-[90%]">
@@ -39,6 +40,15 @@
 					githubLink="https://github.com/PolpOnline/loco-link-shortener"
 					demoLink="https://short.polp.online"
 					thumbnail={ShortenerImg}
+				/>
+			</Carousel.Item>
+			<Carousel.Item>
+				<ProjectCard
+					title="GPU Usage Waybar"
+					description="A simple tool to display GPU usage on waybar (wayland status bar)"
+					technologies={['Rust']}
+					githubLink="https://github.com/PolpOnline/gpu-usage-waybar"
+					thumbnail={GPUUsageWaybarImg}
 				/>
 			</Carousel.Item>
 		</Carousel.Content>
