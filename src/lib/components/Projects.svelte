@@ -29,7 +29,7 @@
 				<ProjectCard
 					title="Monitor"
 					description="A site I built to monitor servers and routers via a simple heartbeat crontab job"
-					technologies={['SvelteKit', 'Rust', 'Axum', 'SQLx', 'PostgreSQL']}
+					technologies={['SvelteKit', 'Rust', 'Axum', 'SQLx', 'PostgreSQL', 'Redis']}
 					githubLink="https://github.com/PolpOnline/monitor"
 					demoLink="https://monitor.polp.online"
 					thumbnail={MonitorImg}
@@ -41,7 +41,7 @@
 					title="Forum Meucci"
 					description="A site I built for my school, where students can subscribe to courses and get information about them.
 											Uses the school's Google OAuth"
-					technologies={['SvelteKit', 'Rust', 'Axum', 'SQLx', 'PostgreSQL']}
+					technologies={['SvelteKit', 'Rust', 'Axum', 'SQLx', 'PostgreSQL', 'Redis']}
 					githubLink="https://github.com/PolpOnline/forum-meucci"
 					thumbnail={ForumImg}
 					backdropColor="#09090B"
@@ -51,7 +51,15 @@
 				<ProjectCard
 					title="Loco Link Shortener"
 					description="A simple link shortener built as a final project for my third year of highschool"
-					technologies={['SvelteKit', 'Rust', 'Loco', 'Axum', 'SeaORM', 'PostgreSQL']}
+					technologies={[
+						'SvelteKit',
+						'Bootstrap',
+						'Rust',
+						'Loco.rs',
+						'Axum',
+						'SeaORM',
+						'PostgreSQL'
+					]}
 					githubLink="https://github.com/PolpOnline/loco-link-shortener"
 					demoLink="https://short.polp.online"
 					thumbnail={ShortenerImg}

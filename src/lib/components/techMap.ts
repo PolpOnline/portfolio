@@ -17,6 +17,18 @@ export const techMap: Record<string, TechInfo> = {
 	},
 	PostgreSQL: {
 		color: '#33678F'
+	},
+	Redis: {
+		color: '#D82C20'
+	},
+	Bootstrap: {
+		color: '#6E2CF2'
+	},
+	'Loco.rs': {
+		color: '#C12110'
+	},
+	SeaORM: {
+		color: '#4E89E8'
 	}
 };
 
