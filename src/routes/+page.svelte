@@ -9,10 +9,14 @@
 <div class="flex h-svh flex-col items-center justify-center">
 	<PolpOnlineLogo class="mb-4 h-52 w-52 rounded-full" />
 
-	<h1 class="mt-4 mb-4 text-5xl">PolpOnline</h1>
+	<h1 class="mt-4 mb-8 text-5xl">PolpOnline</h1>
 
-	<div class="mb-20">
+	<div class="mb-4">
 		<SocialButtons />
+	</div>
+
+	<div class="mb-20 text-center text-2xl text-blue-500">
+		<a href="mailto:me@polp.online"> me@polp.online </a>
 	</div>
 
 	<div class="absolute bottom-20 flex flex-col justify-end justify-self-center">
