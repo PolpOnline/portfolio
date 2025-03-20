@@ -30,6 +30,8 @@
 />
 
 <svelte:head>
+	<!-- preconnect the Umami instance -->
+	<link href="https://umami.polp.online" rel="preconnect" />
 	<link rel="icon" type="image/svg+xml" href={favicon} />
 	<title>PolpOnline</title>
 </svelte:head>
