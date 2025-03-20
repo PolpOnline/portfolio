@@ -14,7 +14,8 @@
 	<div
 		class="skills-container flex w-full flex-wrap justify-center
 		gap-4 px-14 text-6xl [&>*]:cursor-pointer [&>*]:transition-all
-		[&>*]:duration-300 [&>*]:ease-in-out [&>*]:hover:scale-110 [&>*]:hover:rotate-10"
+		[&>*]:duration-300 [&>*]:ease-in-out [&>*]:hover:scale-110
+		[&>*]:hover:rotate-10"
 	>
 		{@render children()}
 	</div>

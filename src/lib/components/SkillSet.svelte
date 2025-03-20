@@ -16,7 +16,7 @@
 	import SkillIconsJavaDark from '~icons/skill-icons/java-dark';
 	import SkillIconsJavascript from '~icons/skill-icons/javascript';
 	import SkillIconsLinuxDark from '~icons/skill-icons/linux-dark';
-	import SkillIconsNodejsDark from '~icons/skill-icons/nodejs-dark';
+	import SkillIconsBunDark from '~icons/skill-icons/bun-dark';
 	import SkillIconsNuxtjsDark from '~icons/skill-icons/nuxtjs-dark';
 	import SkillIconsPnpmDark from '~icons/skill-icons/pnpm-dark';
 	import SkillIconsPostgresqlDark from '~icons/skill-icons/postgresql-dark';
@@ -30,43 +30,107 @@
 	import SkillIconsViteDark from '~icons/skill-icons/vite-dark';
 	import SkillIconsVuejsDark from '~icons/skill-icons/vuejs-dark';
 	import SkillsContainer from '$lib/components/SkillsContainer.svelte';
+	import TooltipSkill from '$lib/components/TooltipSkill.svelte';
+	import { TooltipProvider } from '$lib/components/ui/tooltip';
 </script>
 
-<div class="my-3 grid grid-cols-1 gap-5 text-center text-2xl xl:grid-cols-3">
-	<SkillsContainer title="Frontend">
-		<SkillIconsBootstrap />
-		<SkillIconsCss />
-		<SkillIconsHtml />
-		<SkillIconsJavascript />
-		<SkillIconsNuxtjsDark />
-		<SkillIconsSvelte />
-		<SkillIconsTailwindcssDark />
-		<SkillIconsTypescript />
-		<SkillIconsVuejsDark />
-		<SkillIconsViteDark />
-	</SkillsContainer>
-	<SkillsContainer title="Backend/Systems">
-		<SkillIconsArduino />
-		<SkillIconsBashDark />
-		<SkillIconsC />
-		<SkillIconsCpp />
-		<SkillIconsDiscordjsDark />
-		<SkillIconsJavaDark />
-		<SkillIconsPostgresqlDark />
-		<SkillIconsPrisma />
-		<SkillIconsRedisDark />
-		<SkillIconsRust />
-	</SkillsContainer>
-	<SkillsContainer title="Tools">
-		<SkillIconsArchDark />
-		<SkillIconsCloudflareDark />
-		<SkillIconsDebianDark />
-		<SkillIconsDocker />
-		<SkillIconsGit />
-		<SkillIconsIdeaDark />
-		<SkillIconsLinuxDark />
-		<SkillIconsNodejsDark />
-		<SkillIconsPnpmDark />
-		<SkillIconsPostman />
-	</SkillsContainer>
-</div>
+<TooltipProvider delayDuration={0}>
+	<div class="my-3 grid grid-cols-1 gap-5 text-center text-2xl xl:grid-cols-3">
+		<SkillsContainer title="Frontend">
+			<TooltipSkill name="Bootstrap">
+				<SkillIconsBootstrap />
+			</TooltipSkill>
+			<TooltipSkill name="CSS">
+				<SkillIconsCss />
+			</TooltipSkill>
+			<TooltipSkill name="HTML">
+				<SkillIconsHtml />
+			</TooltipSkill>
+			<TooltipSkill name="JavaScript">
+				<SkillIconsJavascript />
+			</TooltipSkill>
+			<TooltipSkill name="Nuxt.js">
+				<SkillIconsNuxtjsDark />
+			</TooltipSkill>
+			<TooltipSkill name="Svelte">
+				<SkillIconsSvelte />
+			</TooltipSkill>
+			<TooltipSkill name="Tailwind CSS">
+				<SkillIconsTailwindcssDark />
+			</TooltipSkill>
+			<TooltipSkill name="TypeScript">
+				<SkillIconsTypescript />
+			</TooltipSkill>
+			<TooltipSkill name="Vue.js">
+				<SkillIconsVuejsDark />
+			</TooltipSkill>
+			<TooltipSkill name="Vite">
+				<SkillIconsViteDark />
+			</TooltipSkill>
+		</SkillsContainer>
+		<SkillsContainer title="Backend/Systems">
+			<TooltipSkill name="Arduino">
+				<SkillIconsArduino />
+			</TooltipSkill>
+			<TooltipSkill name="Bash">
+				<SkillIconsBashDark />
+			</TooltipSkill>
+			<TooltipSkill name="C">
+				<SkillIconsC />
+			</TooltipSkill>
+			<TooltipSkill name="C++">
+				<SkillIconsCpp />
+			</TooltipSkill>
+			<TooltipSkill name="Discord.js">
+				<SkillIconsDiscordjsDark />
+			</TooltipSkill>
+			<TooltipSkill name="Java">
+				<SkillIconsJavaDark />
+			</TooltipSkill>
+			<TooltipSkill name="PostgreSQL">
+				<SkillIconsPostgresqlDark />
+			</TooltipSkill>
+			<TooltipSkill name="Prisma">
+				<SkillIconsPrisma />
+			</TooltipSkill>
+			<TooltipSkill name="Redis">
+				<SkillIconsRedisDark />
+			</TooltipSkill>
+			<TooltipSkill name="Rust">
+				<SkillIconsRust />
+			</TooltipSkill>
+		</SkillsContainer>
+		<SkillsContainer title="Tools">
+			<TooltipSkill name="Arch Linux">
+				<SkillIconsArchDark />
+			</TooltipSkill>
+			<TooltipSkill name="Cloudflare">
+				<SkillIconsCloudflareDark />
+			</TooltipSkill>
+			<TooltipSkill name="Debian">
+				<SkillIconsDebianDark />
+			</TooltipSkill>
+			<TooltipSkill name="Docker">
+				<SkillIconsDocker />
+			</TooltipSkill>
+			<TooltipSkill name="Git">
+				<SkillIconsGit />
+			</TooltipSkill>
+			<TooltipSkill name="IntelliJ IDEA">
+				<SkillIconsIdeaDark />
+			</TooltipSkill>
+			<TooltipSkill name="Linux">
+				<SkillIconsLinuxDark />
+			</TooltipSkill>
+			<TooltipSkill name="Bun">
+				<SkillIconsBunDark />
+			</TooltipSkill>
+			<TooltipSkill name="PNPM">
+				<SkillIconsPnpmDark />
+			</TooltipSkill>
+			<TooltipSkill name="Postman">
+				<SkillIconsPostman />
+			</TooltipSkill>
+		</SkillsContainer>
+	</div>
+</TooltipProvider>
