@@ -24,6 +24,9 @@ importers:
       '@lucide/svelte':
         specifier: ^0.483.0
         version: 0.483.0(svelte@5.23.2)
+      '@lukulent/svelte-umami':
+        specifier: ^0.0.4
+        version: 0.0.4(svelte@5.23.2)
       '@sveltejs/adapter-cloudflare':
         specifier: ^5.1.0
         version: 5.1.0(@sveltejs/kit@2.20.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.23.2)(vite@6.2.2(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0)))(svelte@5.23.2)(vite@6.2.2(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0)))(wrangler@4.1.0(@cloudflare/workers-types@4.20250317.0))
@@ -709,6 +712,11 @@ packages:
     resolution: {integrity: sha512-b3SbhMIgVJAj/rPa3go6uplTzaFkJzz91TSPO8I8gc2evtHOA2OgSmPYz0S+yEKFIWqLUZ4gika19ljV+tnmyQ==}
     peerDependencies:
       svelte: ^5
+
+  '@lukulent/svelte-umami@0.0.4':
+    resolution: {integrity: sha512-LXmo0oa8lPg032gfqFQgRhEJgUDqgsOzyqPSXtJ2nKlUAYhsPbB0EXwgOjrj7+IfeiBEiq2c6vfv0VV5Jvv/PA==}
+    peerDependencies:
+      svelte: ^4.0.0 || ^5.0.0
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2518,6 +2526,11 @@ snapshots:
 
   '@lucide/svelte@0.483.0(svelte@5.23.2)':
     dependencies:
+      svelte: 5.23.2
+
+  '@lukulent/svelte-umami@0.0.4(svelte@5.23.2)':
+    dependencies:
+      esm-env: 1.2.2
       svelte: 5.23.2
 
   '@nodelib/fs.scandir@2.1.5':

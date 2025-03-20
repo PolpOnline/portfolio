@@ -4,6 +4,7 @@
 
 	import { onMount } from 'svelte';
 	import Lenis from 'lenis';
+	import { UmamiAnalytics } from '@lukulent/svelte-umami';
 
 	import favicon from '$lib/img/favicon.svg';
 
@@ -19,6 +20,14 @@
 		});
 	});
 </script>
+
+<UmamiAnalytics
+	websiteID="be5b4bf5-415c-45b7-88fe-99ee447cfac0"
+	srcURL="https://umami.polp.online/script.js"
+	configuration={{
+		'data-domains': 'polp.online'
+	}}
+/>
 
 <svelte:head>
 	<link rel="icon" type="image/svg+xml" href={favicon} />
