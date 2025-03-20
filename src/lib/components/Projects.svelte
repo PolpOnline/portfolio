@@ -24,23 +24,23 @@
 		<Carousel.Content>
 			<Carousel.Item>
 				<ProjectCard
-					title="Forum Meucci"
-					description="A site I built for my school, where students can subscribe to courses and get information about them.
-											Uses the school's Google OAuth"
-					technologies={['SvelteKit', 'Rust', 'Axum', 'SQLx', 'PostgreSQL']}
-					githubLink="https://github.com/PolpOnline/forum-meucci"
-					thumbnail={ForumImg}
-					backdropColor="#09090B"
-				/>
-			</Carousel.Item>
-			<Carousel.Item>
-				<ProjectCard
 					title="Monitor"
 					description="A site I built to monitor servers and routers via a simple heartbeat crontab job"
 					technologies={['SvelteKit', 'Rust', 'Axum', 'SQLx', 'PostgreSQL']}
 					githubLink="https://github.com/PolpOnline/monitor"
 					demoLink="https://monitor.polp.online"
 					thumbnail={MonitorImg}
+					backdropColor="#09090B"
+				/>
+			</Carousel.Item>
+			<Carousel.Item>
+				<ProjectCard
+					title="Forum Meucci"
+					description="A site I built for my school, where students can subscribe to courses and get information about them.
+											Uses the school's Google OAuth"
+					technologies={['SvelteKit', 'Rust', 'Axum', 'SQLx', 'PostgreSQL']}
+					githubLink="https://github.com/PolpOnline/forum-meucci"
+					thumbnail={ForumImg}
 					backdropColor="#09090B"
 				/>
 			</Carousel.Item>
