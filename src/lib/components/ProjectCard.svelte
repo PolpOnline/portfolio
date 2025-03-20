@@ -33,12 +33,12 @@
 			<enhanced:img
 				src={thumbnail}
 				alt={`${title} thumbnail`}
-				class="project-img mx-auto h-full w-[80%] max-w-[1000px] rounded-2xl py-10"
+				class="project-img mx-auto h-full w-8/10 max-w-5xl rounded-2xl py-10"
 				style="--backdrop-color: {backdropColor}"
 			/>
 		</Lens>
 
-		<h1 class="mb-6 text-center text-[3rem] font-semibold tracking-wider">{title}</h1>
+		<h1 class="mb-6 text-center text-5xl font-semibold tracking-wider">{title}</h1>
 		<p class="mb-6 text-center text-lg">{description}</p>
 		<div class="mb-6 flex flex-wrap justify-center gap-4">
 			{#each technologies as technology}

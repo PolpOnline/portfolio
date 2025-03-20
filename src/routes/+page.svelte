@@ -7,9 +7,9 @@
 </script>
 
 <div class="flex h-svh flex-col items-center justify-center">
-	<PolpOnlineLogo class="mb-4 h-[200px] w-[200px] rounded-full" />
+	<PolpOnlineLogo class="mb-4 h-52 w-52 rounded-full" />
 
-	<h1 class="mt-4 mb-4 text-[3rem]">PolpOnline</h1>
+	<h1 class="mt-4 mb-4 text-5xl">PolpOnline</h1>
 
 	<div class="mb-20">
 		<SocialButtons />

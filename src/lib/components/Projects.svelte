@@ -10,7 +10,7 @@
 	import GPUUsageWaybarImg from '$lib/img/screenshots/gpu_usage_waybar.png?enhanced';
 </script>
 
-<div class="mx-auto my-3 md:w-[80%] xl:w-[90%]">
+<div class="mx-auto my-3 md:w-8/10 xl:w-9/10">
 	<Carousel.Root
 		plugins={[
 			Autoplay({
