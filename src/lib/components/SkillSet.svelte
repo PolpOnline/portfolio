@@ -29,55 +29,44 @@
 	import SkillIconsTypescript from '~icons/skill-icons/typescript';
 	import SkillIconsViteDark from '~icons/skill-icons/vite-dark';
 	import SkillIconsVuejsDark from '~icons/skill-icons/vuejs-dark';
+	import SkillsContainer from '$lib/components/SkillsContainer.svelte';
 </script>
 
 <div class="my-3 grid grid-cols-1 gap-5 text-center text-2xl xl:grid-cols-3">
-	<div>
-		<h3 class="my-8 font-medium">Frontend</h3>
-
-		<div class="flex w-full flex-wrap justify-center gap-4 px-14 text-6xl">
-			<SkillIconsBootstrap />
-			<SkillIconsCss />
-			<SkillIconsHtml />
-			<SkillIconsJavascript />
-			<SkillIconsNuxtjsDark />
-			<SkillIconsSvelte />
-			<SkillIconsTailwindcssDark />
-			<SkillIconsTypescript />
-			<SkillIconsVuejsDark />
-			<SkillIconsViteDark />
-		</div>
-	</div>
-	<div>
-		<h3 class="my-8 font-medium">Backend/Systems</h3>
-
-		<div class="flex w-full flex-wrap justify-center gap-4 px-14 text-6xl">
-			<SkillIconsArduino />
-			<SkillIconsBashDark />
-			<SkillIconsC />
-			<SkillIconsCpp />
-			<SkillIconsDiscordjsDark />
-			<SkillIconsJavaDark />
-			<SkillIconsPostgresqlDark />
-			<SkillIconsPrisma />
-			<SkillIconsRedisDark />
-			<SkillIconsRust />
-		</div>
-	</div>
-	<div>
-		<h3 class="my-8 font-medium">Tools</h3>
-
-		<div class="flex w-full flex-wrap justify-center gap-4 px-14 text-6xl">
-			<SkillIconsArchDark />
-			<SkillIconsCloudflareDark />
-			<SkillIconsDebianDark />
-			<SkillIconsDocker />
-			<SkillIconsGit />
-			<SkillIconsIdeaDark />
-			<SkillIconsLinuxDark />
-			<SkillIconsNodejsDark />
-			<SkillIconsPnpmDark />
-			<SkillIconsPostman />
-		</div>
-	</div>
+	<SkillsContainer title="Frontend">
+		<SkillIconsBootstrap />
+		<SkillIconsCss />
+		<SkillIconsHtml />
+		<SkillIconsJavascript />
+		<SkillIconsNuxtjsDark />
+		<SkillIconsSvelte />
+		<SkillIconsTailwindcssDark />
+		<SkillIconsTypescript />
+		<SkillIconsVuejsDark />
+		<SkillIconsViteDark />
+	</SkillsContainer>
+	<SkillsContainer title="Backend/Systems">
+		<SkillIconsArduino />
+		<SkillIconsBashDark />
+		<SkillIconsC />
+		<SkillIconsCpp />
+		<SkillIconsDiscordjsDark />
+		<SkillIconsJavaDark />
+		<SkillIconsPostgresqlDark />
+		<SkillIconsPrisma />
+		<SkillIconsRedisDark />
+		<SkillIconsRust />
+	</SkillsContainer>
+	<SkillsContainer title="Tools">
+		<SkillIconsArchDark />
+		<SkillIconsCloudflareDark />
+		<SkillIconsDebianDark />
+		<SkillIconsDocker />
+		<SkillIconsGit />
+		<SkillIconsIdeaDark />
+		<SkillIconsLinuxDark />
+		<SkillIconsNodejsDark />
+		<SkillIconsPnpmDark />
+		<SkillIconsPostman />
+	</SkillsContainer>
 </div>
