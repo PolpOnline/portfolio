@@ -44,7 +44,7 @@
 			{#each technologies as technology}
 				{@const color = getTechColor(technology)}
 				<Badge
-					class="custom-tech-badge bg-background cursor-default text-lg"
+					class="custom-tech-badge bg-background cursor-default text-lg select-none"
 					variant="outline"
 					style="--color: {color || 'initial'}; --backdrop-color: {color || '#FFFFFF'}"
 				>
