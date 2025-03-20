@@ -14,6 +14,11 @@ const config = {
 	},
 	kit: {
 		adapter: adapter()
+	},
+	compilerOptions: {
+		compatibility: {
+			componentApi: 4
+		}
 	}
 };
 

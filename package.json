@@ -60,6 +60,7 @@
 	},
 	"packageManager": "pnpm@10.6.3",
 	"dependencies": {
+		"bigger-picture": "^1.1.19",
 		"lenis": "^1.2.3"
 	}
 }

@@ -3,7 +3,6 @@
 	import MdiLinkVariant from '~icons/mdi/link-variant';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
-	import Lens from '$lib/components/aceternity/Lens.svelte';
 	import { getTechColor } from '$lib/components/techMap';
 
 	const {
@@ -23,20 +22,18 @@
 		thumbnail: any;
 		backdropColor: string;
 	} = $props();
-
-	let hovering = $state(false);
 </script>
 
 <div class="w-full">
 	<div class="flex w-full flex-col items-center justify-center">
-		<Lens bind:hovering lensSize={400} zoomFactor={2}>
+		<div class="mx-auto w-8/10 max-w-5xl justify-self-center py-10">
 			<enhanced:img
 				src={thumbnail}
 				alt={`${title} thumbnail`}
-				class="project-img mx-auto h-full w-8/10 max-w-5xl rounded-2xl py-10"
+				class="project-img rounded-2xl"
 				style="--backdrop-color: {backdropColor}"
 			/>
-		</Lens>
+		</div>
 
 		<h1 class="mb-6 px-5 text-center text-5xl font-semibold tracking-wider">{title}</h1>
 		<p class="mb-6 px-3 text-center text-lg">{description}</p>

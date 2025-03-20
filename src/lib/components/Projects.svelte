@@ -8,6 +8,38 @@
 	import MonitorImg from '$lib/img/screenshots/monitor.png?enhanced';
 	import ShortenerImg from '$lib/img/screenshots/loco_link_shortener.png?enhanced';
 	import GPUUsageWaybarImg from '$lib/img/screenshots/gpu_usage_waybar.png?enhanced';
+	import BiggerPicture from 'bigger-picture';
+	import { type BiggerPictureInstance } from 'bigger-picture';
+	import 'bigger-picture/css';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		initializeBiggerPicture();
+	});
+
+	let bp: BiggerPictureInstance | null = null;
+	let imageLinks: NodeListOf<Element>;
+
+	function initializeBiggerPicture() {
+		bp = BiggerPicture({
+			target: document.body
+		});
+
+		// Grab image links
+		imageLinks = document.querySelectorAll('.project-img');
+		for (const img of imageLinks) {
+			img.addEventListener('click', openGallery);
+		}
+	}
+
+	function openGallery(e: Event) {
+		e.preventDefault();
+
+		bp!.open({
+			items: imageLinks,
+			el: e.currentTarget || undefined
+		});
+	}
 </script>
 
 <div class="mx-auto my-3 md:w-8/10 xl:w-9/10">
