@@ -13,7 +13,7 @@
 
 	<div
 		class="skills-container flex w-full flex-wrap justify-center
-		gap-4 px-14 text-6xl [&>*]:cursor-default [&>*]:transition-all
+		gap-4 px-8 text-6xl 2xl:px-14 [&>*]:cursor-default [&>*]:transition-all
 		[&>*]:duration-300 [&>*]:ease-in-out [&>*]:hover:scale-110
 		[&>*]:hover:rotate-10"
 	>
