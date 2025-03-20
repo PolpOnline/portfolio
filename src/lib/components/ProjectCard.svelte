@@ -26,13 +26,16 @@
 
 <div class="w-full">
 	<div class="flex w-full flex-col items-center justify-center">
-		<div class="mx-auto w-8/10 max-w-5xl justify-self-center py-10">
-			<enhanced:img
-				src={thumbnail}
-				alt={`${title} thumbnail`}
-				class="project-img rounded-2xl"
-				style="--backdrop-color: {backdropColor}"
-			/>
+		<!-- DO NOT REMOVE THE DIV BELOW -->
+		<div>
+			<div class="mx-auto w-8/10 max-w-5xl justify-self-center py-10">
+				<enhanced:img
+					src={thumbnail}
+					alt={`${title} thumbnail`}
+					class="project-img rounded-2xl"
+					style="--backdrop-color: {backdropColor}"
+				/>
+			</div>
 		</div>
 
 		<h1 class="mb-6 px-5 text-center text-5xl font-semibold tracking-wider">{title}</h1>
