@@ -37,98 +37,98 @@
 <TooltipProvider delayDuration={0}>
 	<div class="my-3 grid grid-cols-1 gap-5 text-center text-2xl xl:grid-cols-3">
 		<SkillsContainer title="Frontend">
-			<TooltipSkill name="Bootstrap">
+			<TooltipSkill name="Bootstrap" color="#7952b3">
 				<SkillIconsBootstrap />
 			</TooltipSkill>
-			<TooltipSkill name="CSS">
+			<TooltipSkill name="CSS" color="#1572b6">
 				<SkillIconsCss />
 			</TooltipSkill>
-			<TooltipSkill name="HTML">
+			<TooltipSkill name="HTML" color="#e34f26">
 				<SkillIconsHtml />
 			</TooltipSkill>
-			<TooltipSkill name="JavaScript">
+			<TooltipSkill name="JavaScript" color="#f7df1e">
 				<SkillIconsJavascript />
 			</TooltipSkill>
-			<TooltipSkill name="Nuxt.js">
+			<TooltipSkill name="Nuxt.js" color="#00dc82">
 				<SkillIconsNuxtjsDark />
 			</TooltipSkill>
-			<TooltipSkill name="Svelte">
+			<TooltipSkill name="Svelte" color="#ff3e00">
 				<SkillIconsSvelte />
 			</TooltipSkill>
-			<TooltipSkill name="Tailwind CSS">
+			<TooltipSkill name="Tailwind CSS" color="#23bbbc">
 				<SkillIconsTailwindcssDark />
 			</TooltipSkill>
-			<TooltipSkill name="TypeScript">
+			<TooltipSkill name="TypeScript" color="#3178c6">
 				<SkillIconsTypescript />
 			</TooltipSkill>
-			<TooltipSkill name="Vue.js">
+			<TooltipSkill name="Vue.js" color="#41b883">
 				<SkillIconsVuejsDark />
 			</TooltipSkill>
-			<TooltipSkill name="Vite">
+			<TooltipSkill name="Vite" color="#646cff">
 				<SkillIconsViteDark />
 			</TooltipSkill>
 		</SkillsContainer>
 		<SkillsContainer title="Backend/Systems">
-			<TooltipSkill name="Arduino">
+			<TooltipSkill name="Arduino" color="#00979c">
 				<SkillIconsArduino />
 			</TooltipSkill>
-			<TooltipSkill name="Bash">
+			<TooltipSkill name="Bash" color="#4eaa25">
 				<SkillIconsBashDark />
 			</TooltipSkill>
-			<TooltipSkill name="C">
+			<TooltipSkill name="C" color="#394aab">
 				<SkillIconsC />
 			</TooltipSkill>
-			<TooltipSkill name="C++">
+			<TooltipSkill name="C++" color="#00599c">
 				<SkillIconsCpp />
 			</TooltipSkill>
-			<TooltipSkill name="Discord.js">
+			<TooltipSkill name="Discord.js" color="#5865f2">
 				<SkillIconsDiscordjsDark />
 			</TooltipSkill>
-			<TooltipSkill name="Java">
+			<TooltipSkill name="Java" color="#007396">
 				<SkillIconsJavaDark />
 			</TooltipSkill>
-			<TooltipSkill name="PostgreSQL">
+			<TooltipSkill name="PostgreSQL" color="#336791">
 				<SkillIconsPostgresqlDark />
 			</TooltipSkill>
-			<TooltipSkill name="Prisma">
+			<TooltipSkill name="Prisma" color="#677deb">
 				<SkillIconsPrisma />
 			</TooltipSkill>
-			<TooltipSkill name="Redis">
+			<TooltipSkill name="Redis" color="#dc382d">
 				<SkillIconsRedisDark />
 			</TooltipSkill>
-			<TooltipSkill name="Rust">
+			<TooltipSkill name="Rust" color="#dea584">
 				<SkillIconsRust />
 			</TooltipSkill>
 		</SkillsContainer>
 		<SkillsContainer title="Tools">
-			<TooltipSkill name="Arch Linux">
+			<TooltipSkill name="Arch Linux" color="#1793d1">
 				<SkillIconsArchDark />
 			</TooltipSkill>
-			<TooltipSkill name="Cloudflare">
+			<TooltipSkill name="Cloudflare" color="#f38020">
 				<SkillIconsCloudflareDark />
 			</TooltipSkill>
-			<TooltipSkill name="Debian">
+			<TooltipSkill name="Debian" color="#a81d33">
 				<SkillIconsDebianDark />
 			</TooltipSkill>
-			<TooltipSkill name="Docker">
+			<TooltipSkill name="Docker" color="#2496ed">
 				<SkillIconsDocker />
 			</TooltipSkill>
-			<TooltipSkill name="Git">
+			<TooltipSkill name="Git" color="#f05032">
 				<SkillIconsGit />
 			</TooltipSkill>
-			<TooltipSkill name="IntelliJ IDEA">
+			<TooltipSkill name="IntelliJ IDEA" color="#000000">
 				<SkillIconsIdeaDark />
 			</TooltipSkill>
-			<TooltipSkill name="Linux">
+			<TooltipSkill name="Linux" color="#fcc624">
 				<SkillIconsLinuxDark />
 			</TooltipSkill>
-			<TooltipSkill name="Bun">
+			<TooltipSkill name="Bun" color="#fbf0df">
 				<SkillIconsBunDark />
 			</TooltipSkill>
-			<TooltipSkill name="PNPM">
+			<TooltipSkill name="PNPM" color="#f69220">
 				<SkillIconsPnpmDark />
 			</TooltipSkill>
-			<TooltipSkill name="Postman">
+			<TooltipSkill name="Postman" color="#ff6c37">
 				<SkillIconsPostman />
 			</TooltipSkill>
 		</SkillsContainer>
