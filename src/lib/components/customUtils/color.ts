@@ -1,4 +1,4 @@
-/**customUtils/color
+/**
  * Determines if a color is bright (should use dark text) or dark (should use light text)
  * @param hexColor - Hex color string like "#ffffff"
  * @returns boolean - true if the color is bright
