@@ -12,6 +12,9 @@
 
 <div class="mx-auto my-3 md:w-8/10 xl:w-9/10">
 	<Carousel.Root
+		opts={{
+			loop: true
+		}}
 		plugins={[
 			Autoplay({
 				delay: 5000,
