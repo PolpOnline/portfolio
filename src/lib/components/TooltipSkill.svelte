@@ -15,7 +15,7 @@
 </script>
 
 <Tooltip.Root>
-	<Tooltip.Trigger>
+	<Tooltip.Trigger aria-label={name}>
 		{@render children()}
 	</Tooltip.Trigger>
 	<Tooltip.Content
