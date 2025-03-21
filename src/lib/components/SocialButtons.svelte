@@ -7,22 +7,22 @@
 
 <div class="flex flex-row items-center justify-center gap-6 text-4xl">
 	<div style="--backdrop-color: #242938" class="icon-shadow">
-		<a href="https://github.com/PolpOnline" target="_blank">
+		<a href="https://github.com/PolpOnline" target="_blank" aria-label="GitHub">
 			<SkillIconsGithubDark />
 		</a>
 	</div>
 	<div style="--backdrop-color: #0088CC" class="icon-shadow">
-		<a href="https://telegram.me/PolpOnline" target="_blank">
+		<a href="https://telegram.me/PolpOnline" target="_blank" aria-label="Telegram">
 			<LogosTelegram />
 		</a>
 	</div>
 	<div style="--backdrop-color: #5865F2" class="icon-shadow">
-		<a href="https://discordapp.com/users/524254508151209995" target="_blank">
+		<a href="https://discordapp.com/users/524254508151209995" target="_blank" aria-label="Discord">
 			<SkillIconsDiscord />
 		</a>
 	</div>
 	<div style="--backdrop-color: #A830BE" class="icon-shadow">
-		<a href="https://instagram.com/tommaso.melacarne" target="_blank">
+		<a href="https://instagram.com/tommaso.melacarne" target="_blank" aria-label="Instagram">
 			<SkillIconsInstagram />
 		</a>
 	</div>
