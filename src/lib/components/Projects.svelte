@@ -92,7 +92,7 @@
 						'SeaORM',
 						'PostgreSQL'
 					]}
-					githubLink="https://github.com/PolpOnline/loco-link-shortener"
+					githubLink="https://github.com/PolpOnline/loco_link_shortener"
 					demoLink="https://short.polp.online"
 					thumbnail={ShortenerImg}
 					backdropColor="#000000"
