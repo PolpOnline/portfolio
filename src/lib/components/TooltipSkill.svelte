@@ -15,7 +15,7 @@
 </script>
 
 <Tooltip.Root>
-	<Tooltip.Trigger aria-label={name}>
+	<Tooltip.Trigger aria-label={name} tabindex={-1}>
 		{@render children()}
 	</Tooltip.Trigger>
 	<Tooltip.Content
