@@ -5,11 +5,12 @@
 	import { onMount } from 'svelte';
 	import Lenis from 'lenis';
 	import { UmamiAnalytics } from '@lukulent/svelte-umami';
+	import type { Snippet } from 'svelte';
 
 	import favicon from '$lib/img/favicon.svg';
 
 	interface Props {
-		children?: import('svelte').Snippet;
+		children?: Snippet;
 	}
 
 	let { children }: Props = $props();

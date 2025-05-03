@@ -41,7 +41,7 @@
 		<h1 class="mb-6 px-5 text-center text-5xl font-semibold tracking-wider">{title}</h1>
 		<p class="mb-6 px-5 text-center text-lg">{description}</p>
 		<div class="mb-6 flex flex-wrap justify-center gap-4">
-			{#each technologies as technology}
+			{#each technologies as technology (technology)}
 				{@const color = getTechColor(technology)}
 				<Badge
 					class="custom-tech-badge bg-background cursor-default text-lg select-none"

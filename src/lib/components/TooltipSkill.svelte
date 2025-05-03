@@ -2,6 +2,7 @@
 	// noinspection ES6UnusedImports
 	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
 	import { isBrightColor } from '$lib/components/customUtils/color';
+	import type { Snippet } from 'svelte';
 
 	const {
 		name,
@@ -10,7 +11,7 @@
 	}: {
 		name: string;
 		color: string;
-		children: any;
+		children: Snippet;
 	} = $props();
 </script>
 
