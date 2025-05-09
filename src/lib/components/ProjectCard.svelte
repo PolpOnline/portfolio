@@ -19,6 +19,7 @@
 		technologies: string[];
 		githubLink: string;
 		demoLink?: string;
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		thumbnail: any;
 		backdropColor: string;
 	} = $props();
