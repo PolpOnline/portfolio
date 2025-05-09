@@ -1,9 +1,11 @@
 <script lang="ts">
 	import MdiGithub from '~icons/mdi/github';
 	import MdiLinkVariant from '~icons/mdi/link-variant';
+	import LucideStar from '~icons/lucide/star';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
 	import { getTechColor } from '$lib/components/techMap';
+	import { browser } from '$app/environment';
 
 	const {
 		title,
@@ -23,6 +25,27 @@
 		thumbnail: any;
 		backdropColor: string;
 	} = $props();
+
+	const splitGithubLink = githubLink.split('/');
+	const githubOwner = splitGithubLink[3];
+	const githubRepo = splitGithubLink[4];
+
+	const stars_count_query = browser
+		? fetch(`/api/github-stars/${githubOwner}/${githubRepo}`)
+				.then((response) => {
+					if (!response.ok) {
+						throw new Error('Network response was not ok');
+					}
+					return response.json();
+				})
+				.then((data: { stars: number }) => {
+					return data.stars;
+				})
+				.catch((error) => {
+					console.error('Error fetching stars:', error);
+					return 0; // Return a default value in case of error
+				})
+		: Promise.resolve();
 </script>
 
 <div class="w-full">
@@ -39,7 +62,20 @@
 			</div>
 		</div>
 
-		<h1 class="mb-6 px-5 text-center text-5xl font-semibold tracking-wider">{title}</h1>
+		<h1 class="mb-6 px-5 text-center text-5xl font-semibold tracking-wider">
+			{title}
+			{#await stars_count_query then stars_count}
+				{#if stars_count && stars_count > 10}
+					<Badge
+						class="bg-background inline-flex cursor-default items-center gap-2 align-middle text-lg select-none"
+						variant="outline"
+					>
+						{stars_count}
+						<LucideStar class="inline h-5 w-5 align-middle" />
+					</Badge>
+				{/if}
+			{/await}
+		</h1>
 		<p class="mb-6 px-5 text-center text-lg">{description}</p>
 		<div class="mb-6 flex flex-wrap justify-center gap-4">
 			{#each technologies as technology (technology)}
