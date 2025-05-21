@@ -3,9 +3,11 @@ import { defineConfig } from 'vite';
 import Unfonts from 'unplugin-fonts/vite';
 import Icons from 'unplugin-icons/vite';
 import { enhancedImages } from '@sveltejs/enhanced-img';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
 	plugins: [
+		tailwindcss(),
 		enhancedImages(),
 		sveltekit(),
 		Icons({
