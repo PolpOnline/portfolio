@@ -1,3 +1,4 @@
+import devtoolsJson from 'vite-plugin-devtools-json';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import Unfonts from 'unplugin-fonts/vite';
@@ -11,8 +12,7 @@ export default defineConfig({
 		enhancedImages(),
 		sveltekit(),
 		Icons({
-			compiler: 'svelte',
-			// experimental
+			compiler: 'svelte', // experimental
 			autoInstall: true
 		}),
 		Unfonts({
@@ -37,20 +37,17 @@ export default defineConfig({
 						src: './src/lib/fonts/CascadiaCode.woff2'
 					}
 				],
-
 				/**
 				 * Defines the default `font-display` value used for the generated
 				 * `@font-rule` classes.
 				 */
 				display: 'swap',
-
 				/**
 				 * Using `<link rel="preload">` will trigger a request for the WebFont
 				 * early in the critical rendering path, without having to wait for the
 				 * CSSOM to be created.
 				 */
 				preload: true,
-
 				/**
 				 * Using `<link rel="prefetch">` is intended for prefetching resources
 				 * that will be used in the next navigation/page load
@@ -59,7 +56,6 @@ export default defineConfig({
 				 * Note: this can not be used with `preload`
 				 */
 				prefetch: false,
-
 				/**
 				 * define where the font load tags should be inserted
 				 * default: 'head-prepend'
@@ -67,6 +63,7 @@ export default defineConfig({
 				 */
 				injectTo: 'head-prepend'
 			}
-		})
+		}),
+		devtoolsJson()
 	]
 });

@@ -30,26 +30,31 @@
 	const githubOwner = splitGithubLink[3];
 	const githubRepo = splitGithubLink[4];
 
-	async function fetchStarsCount() {
-		try {
-			const githubRes = await fetch(`https://api.github.com/repos/${githubOwner}/${githubRepo}`, {
-				headers: {
-					Accept: 'application/vnd.github.v3+json'
+	const fetchStarsCount = browser
+		? async () => {
+				try {
+					const githubRes = await fetch(
+						`https://api.github.com/repos/${githubOwner}/${githubRepo}`,
+						{
+							headers: {
+								Accept: 'application/vnd.github.v3+json'
+							}
+						}
+					);
+
+					if (!githubRes.ok) {
+						new Error(`Failed to fetch stars count for repository ${githubOwner}/${githubRepo}`);
+					}
+
+					const data = await githubRes.json();
+
+					return data['stargazers_count'] as number;
+				} catch (err) {
+					console.error(err);
+					return 0; // Return a default value in case of error
 				}
-			});
-
-			if (!githubRes.ok) {
-				new Error(`Failed to fetch stars count for repository ${githubOwner}/${githubRepo}`);
 			}
-
-			const data = await githubRes.json();
-
-			return data['stargazers_count'] as number;
-		} catch (err) {
-			console.error(err);
-			return 0; // Return a default value in case of error
-		}
-	}
+		: async () => 0;
 </script>
 
 <div class="w-full">
