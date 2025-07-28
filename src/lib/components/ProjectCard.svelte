@@ -30,22 +30,26 @@
 	const githubOwner = splitGithubLink[3];
 	const githubRepo = splitGithubLink[4];
 
-	const stars_count_query = browser
-		? fetch(`/api/github-stars/${githubOwner}/${githubRepo}`)
-				.then((response) => {
-					if (!response.ok) {
-						throw new Error('Network response was not ok');
-					}
-					return response.json();
-				})
-				.then((data: { stars: number }) => {
-					return data.stars;
-				})
-				.catch((error) => {
-					console.error('Error fetching stars:', error);
-					return 0; // Return a default value in case of error
-				})
-		: Promise.resolve();
+	async function fetchStarsCount() {
+		try {
+			const githubRes = await fetch(`https://api.github.com/repos/${githubOwner}/${githubRepo}`, {
+				headers: {
+					Accept: 'application/vnd.github.v3+json'
+				}
+			});
+
+			if (!githubRes.ok) {
+				new Error(`Failed to fetch stars count for repository ${githubOwner}/${githubRepo}`);
+			}
+
+			const data = await githubRes.json();
+
+			return data['stargazers_count'] as number;
+		} catch (err) {
+			console.error(err);
+			return 0; // Return a default value in case of error
+		}
+	}
 </script>
 
 <div class="w-full">
@@ -64,7 +68,7 @@
 
 		<h1 class="mb-6 px-5 text-center text-5xl font-semibold tracking-wider">
 			{title}
-			{#await stars_count_query then stars_count}
+			{#await fetchStarsCount() then stars_count}
 				{#if stars_count && stars_count > 10}
 					<Badge
 						class="bg-background inline-flex cursor-default items-center gap-2 align-middle text-lg select-none"
