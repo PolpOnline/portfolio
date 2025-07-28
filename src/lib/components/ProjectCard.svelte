@@ -67,11 +67,11 @@
 			{#await stars_count_query then stars_count}
 				{#if stars_count && stars_count > 10}
 					<Badge
-						class="bg-background inline-flex cursor-default items-center gap-2 align-middle text-lg select-none"
+						class="badge-container bg-background inline-flex cursor-default items-center text-lg select-none"
 						variant="outline"
 					>
 						{stars_count}
-						<LucideStar class="inline h-5 w-5 align-middle" />
+						<LucideStar class="ml-1 inline h-5 w-5" />
 					</Badge>
 				{/if}
 			{/await}
@@ -119,5 +119,11 @@
 
 	.project-img {
 		filter: drop-shadow(0 0 1.5rem var(--backdrop-color));
+	}
+
+	:global(.badge-container) {
+		display: inline-flex;
+		align-items: center;
+		vertical-align: middle;
 	}
 </style>

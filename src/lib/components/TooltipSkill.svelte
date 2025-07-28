@@ -22,6 +22,7 @@
 	<Tooltip.Content
 		--tech-color={color}
 		class="border-(--tech-color) bg-(--tech-color) {isBrightColor(color) ? 'text-secondary' : ''}"
+		arrowClasses="border-(--tech-color) bg-(--tech-color)"
 	>
 		{name}
 	</Tooltip.Content>
