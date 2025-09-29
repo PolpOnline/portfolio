@@ -1,0 +1,14 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:recommended"],
+	"enabledManagers": ["npm"],
+	"schedule": ["1pm on monday"],
+	"timezone": "Europe/Rome",
+	"packageRules": [
+		{
+			"groupName": "weekly site deps",
+			"automerge": true,
+			"matchPackageNames": ["*"]
+		}
+	]
+}
