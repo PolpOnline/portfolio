@@ -34,7 +34,7 @@
 	import { TooltipProvider } from '$lib/components/ui/tooltip';
 </script>
 
-<TooltipProvider delayDuration={0}>
+<TooltipProvider>
 	<div class="my-3 grid grid-cols-1 gap-5 text-center text-2xl xl:grid-cols-3">
 		<SkillsContainer title="Frontend">
 			<TooltipSkill name="Bootstrap" color="#6e2cf2">
