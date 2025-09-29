@@ -2,7 +2,7 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:recommended"],
 	"enabledManagers": ["npm"],
-	"schedule": ["1pm on monday"],
+	"schedule": ["after 1pm on monday"],
 	"timezone": "Europe/Rome",
 	"packageRules": [
 		{
