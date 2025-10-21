@@ -2,6 +2,7 @@
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+bun.lock
 
 # Ignore files from shadcn
 src/lib/components/ui
