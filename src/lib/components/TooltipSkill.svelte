@@ -13,6 +13,16 @@
 		color: string;
 		children: Snippet;
 	} = $props();
+
+	let tooltipContentRef: HTMLElement | null | undefined = $state(null);
+
+	$effect(() => {
+		if (!tooltipContentRef) {
+			return;
+		}
+
+		tooltipContentRef.style.setProperty('--tech-color', color);
+	});
 </script>
 
 <Tooltip.Root>
@@ -20,9 +30,9 @@
 		{@render children()}
 	</Tooltip.Trigger>
 	<Tooltip.Content
-		--tech-color={color}
-		class="border-(--tech-color) bg-(--tech-color) {isBrightColor(color) ? 'text-secondary' : ''}"
+		class="border-(--tech-color) bg-(--tech-color) {!isBrightColor(color) ? 'text-primary' : ''}"
 		arrowClasses="border-(--tech-color) bg-(--tech-color)"
+		bind:ref={tooltipContentRef}
 	>
 		{name}
 	</Tooltip.Content>
