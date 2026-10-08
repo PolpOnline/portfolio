@@ -8,6 +8,7 @@
 	import type { Snippet } from 'svelte';
 
 	import favicon from '$lib/img/favicon.svg';
+	import faviconIco from '$lib/img/favicon.ico';
 
 	interface Props {
 		children?: Snippet;
@@ -33,6 +34,7 @@
 <svelte:head>
 	<!-- preconnect the Umami instance -->
 	<link href="https://umami.polp.online" rel="preconnect" />
+	<link rel="icon" href={faviconIco} sizes="any" />
 	<link rel="icon" type="image/svg+xml" href={favicon} />
 </svelte:head>
 
