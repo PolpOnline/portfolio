@@ -17,7 +17,9 @@
 		class="flex w-full flex-wrap justify-center
 		gap-4 px-8 text-6xl 2xl:px-14 [&>button]:cursor-default [&>button]:transition-all
 		[&>button]:duration-300 [&>button]:ease-in-out [&>button]:hover:scale-110
-		[&>button:nth-of-type(even)]:hover:-rotate-10 [&>button:nth-of-type(odd)]:hover:rotate-10"
+		[&>button:nth-of-type(even)]:hover:-rotate-10
+		[&>button:nth-of-type(even)[data-tilt]]:-rotate-10 [&>button:nth-of-type(odd)]:hover:rotate-10
+		[&>button:nth-of-type(odd)[data-tilt]]:rotate-10 [&>button[data-tilt]]:scale-110"
 	>
 		{@render children()}
 	</div>

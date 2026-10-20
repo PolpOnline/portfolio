@@ -44,10 +44,12 @@
 	}
 </script>
 
+<!-- `data-tilt` mirrors the open state so touch devices get the same icon tilt as hover. -->
 <Tooltip.Root bind:open disableCloseOnTriggerClick>
 	<Tooltip.Trigger
 		aria-label={name}
 		tabindex={-1}
+		data-tilt={open ? 'true' : undefined}
 		onpointerdown={handlePointerDown}
 		onclick={handleClick}
 	>

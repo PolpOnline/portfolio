@@ -27,7 +27,21 @@ test('tooltip toggles on tap on mobile', async ({ page }, testInfo) => {
 	await trigger.tap();
 	await expect(tooltip(page)).toBeVisible({ timeout: 15_000 });
 	await expect(tooltip(page)).toContainText('Svelte');
+	await expect(trigger).toHaveAttribute('data-tilt', 'true');
+	await expect
+		.poll(() => trigger.evaluate((element) => getComputedStyle(element).scale))
+		.toBe('1.1');
+	await expect
+		.poll(() => trigger.evaluate((element) => getComputedStyle(element).rotate))
+		.not.toBe('none');
 
 	await trigger.tap();
 	await expect(tooltip(page)).toBeHidden();
+	await expect(trigger).not.toHaveAttribute('data-tilt', 'true');
+	await expect
+		.poll(() => trigger.evaluate((element) => getComputedStyle(element).scale))
+		.toBe('none');
+	await expect
+		.poll(() => trigger.evaluate((element) => getComputedStyle(element).rotate))
+		.toBe('none');
 });
