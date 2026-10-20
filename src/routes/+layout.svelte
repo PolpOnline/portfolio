@@ -1,14 +1,13 @@
 <script lang="ts">
 	import '../app.css';
-	import 'unfonts.css';
 
 	import { onMount } from 'svelte';
 	import Lenis from 'lenis';
 	import { UmamiAnalytics } from '@lukulent/svelte-umami';
 	import type { Snippet } from 'svelte';
 
-	import favicon from '$lib/img/favicon.svg';
-	import faviconIco from '$lib/img/favicon.ico';
+	import favicon from '#lib/img/favicon.svg';
+	import faviconIco from '#lib/img/favicon.ico';
 
 	interface Props {
 		children?: Snippet;

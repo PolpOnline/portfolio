@@ -2,10 +2,10 @@
 	import MdiGithub from '~icons/mdi/github';
 	import MdiLinkVariant from '~icons/mdi/link-variant';
 	import LucideStar from '~icons/lucide/star';
-	import { Badge } from '$lib/components/ui/badge';
-	import { Button } from '$lib/components/ui/button';
-	import { getTechColor } from '$lib/components/techMap';
-	import { browser } from '$app/environment';
+	import { Badge } from '#lib/components/ui/badge';
+	import { Button } from '#lib/components/ui/button';
+	import { getTechColor } from '#lib/components/techMap';
+	import { browser } from '$app/env';
 
 	const {
 		title,
@@ -26,9 +26,9 @@
 		backdropColor: string;
 	} = $props();
 
-	const splitGithubLink = githubLink.split('/');
-	const githubOwner = splitGithubLink[3];
-	const githubRepo = splitGithubLink[4];
+	const splitGithubLink = $derived(githubLink.split('/'));
+	const githubOwner = $derived(splitGithubLink[3]);
+	const githubRepo = $derived(splitGithubLink[4]);
 
 	const fetchStarsCount = browser
 		? async () => {

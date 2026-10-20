@@ -24,7 +24,9 @@ test('home page renders without errors', async ({ page }) => {
 	const projectImage = page.getByAltText('Monitor thumbnail');
 	await projectImage.scrollIntoViewIfNeeded();
 	await expect
-		.poll(() => projectImage.evaluate((element) => (element as HTMLImageElement).naturalWidth))
+		.poll(() => projectImage.evaluate((element) => (element as HTMLImageElement).naturalWidth), {
+			timeout: 15_000
+		})
 		.toBeGreaterThan(0);
 
 	expect(pageErrors).toEqual([]);

@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { PolpOnlineLogo } from '$lib/img';
-	import SkillSet from '$lib/components/SkillSet.svelte';
-	import Scroller from '$lib/components/Scroller.svelte';
-	import SocialButtons from '$lib/components/SocialButtons.svelte';
-	import Projects from '$lib/components/Projects.svelte';
+	import { PolpOnlineLogo } from '#lib/img';
+	import SkillSet from '#lib/components/SkillSet.svelte';
+	import Scroller from '#lib/components/Scroller.svelte';
+	import SocialButtons from '#lib/components/SocialButtons.svelte';
+	import Projects from '#lib/components/Projects.svelte';
 </script>
 
 <div class="flex h-svh flex-col items-center justify-center">

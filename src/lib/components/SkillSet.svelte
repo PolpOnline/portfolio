@@ -29,9 +29,9 @@
 	import SkillIconsTypescript from '~icons/skill-icons/typescript';
 	import SkillIconsViteDark from '~icons/skill-icons/vite-dark';
 	import SkillIconsVuejsDark from '~icons/skill-icons/vuejs-dark';
-	import SkillsContainer from '$lib/components/SkillsContainer.svelte';
-	import TooltipSkill from '$lib/components/TooltipSkill.svelte';
-	import { TooltipProvider } from '$lib/components/ui/tooltip';
+	import SkillsContainer from '#lib/components/SkillsContainer.svelte';
+	import TooltipSkill from '#lib/components/TooltipSkill.svelte';
+	import { TooltipProvider } from '#lib/components/ui/tooltip';
 </script>
 
 <TooltipProvider>

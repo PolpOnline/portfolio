@@ -1,8 +1,8 @@
 <script lang="ts">
 	import emblaCarouselSvelte from "embla-carousel-svelte";
-	import type { HTMLAttributes } from "svelte/elements";
+	import { cn, type WithElementRef } from "#lib/utils.js";
 	import { getEmblaContext } from "./context.js";
-	import { cn, type WithElementRef } from "$lib/utils.js";
+	import type { HTMLAttributes } from "svelte/elements";
 
 	let {
 		ref = $bindable(null),
@@ -32,7 +32,7 @@
 		bind:this={ref}
 		class={cn(
 			"flex",
-			emblaCtx.orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
+			emblaCtx.orientation === "horizontal" ? "-ms-4" : "-mt-4 flex-col",
 			className
 		)}
 		data-embla-container=""

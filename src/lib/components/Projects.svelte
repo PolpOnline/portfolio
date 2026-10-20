@@ -1,13 +1,13 @@
 <script lang="ts">
 	// noinspection ES6UnusedImports
-	import * as Carousel from '$lib/components/ui/carousel';
+	import * as Carousel from '#lib/components/ui/carousel';
 	import Autoplay from 'embla-carousel-autoplay';
 
-	import ProjectCard from '$lib/components/ProjectCard.svelte';
-	import ForumImg from '$lib/img/screenshots/forum_meucci.png?enhanced';
-	import MonitorImg from '$lib/img/screenshots/monitor.png?enhanced';
-	import ShortenerImg from '$lib/img/screenshots/loco_link_shortener.png?enhanced';
-	import GPUUsageWaybarImg from '$lib/img/screenshots/gpu_usage_waybar.png?enhanced';
+	import ProjectCard from '#lib/components/ProjectCard.svelte';
+	import ForumImg from '#lib/img/screenshots/forum_meucci.png?enhanced';
+	import MonitorImg from '#lib/img/screenshots/monitor.png?enhanced';
+	import ShortenerImg from '#lib/img/screenshots/loco_link_shortener.png?enhanced';
+	import GPUUsageWaybarImg from '#lib/img/screenshots/gpu_usage_waybar.png?enhanced';
 	import BiggerPicture from 'bigger-picture';
 	import { type BiggerPictureInstance } from 'bigger-picture';
 	import 'bigger-picture/css';
